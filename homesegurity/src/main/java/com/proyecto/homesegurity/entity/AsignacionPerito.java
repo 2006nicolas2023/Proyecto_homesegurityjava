@@ -1,6 +1,5 @@
 package com.proyecto.homesegurity.entity;
 
-import com.proyecto.homesegurity.entity.enums.EstadoAsignacion;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
@@ -27,63 +26,30 @@ public class AsignacionPerito {
     @Column(name = "observaciones", length = 300)
     private String observaciones;
 
-    // FK a PERITO
     @ManyToOne
     @JoinColumn(name = "id_perito", nullable = false)
     private Perito perito;
 
-    // FK a AVALUOS
     @ManyToOne
     @JoinColumn(name = "id_avaluos", nullable = false)
     private Avaluos avaluos;
 
-    // Getters y Setters
-    public Long getId() {
-        return idAsignacionPerito;
-    }
+    // GETTERS Y SETTERS
+    public Long getId() { return idAsignacionPerito; }
+    public void setId(Long id) { this.idAsignacionPerito = id; }
 
-    public void setId(Long id) {
-        this.idAsignacionPerito = id;
-    }
+    public LocalDate getFechaAsignacion() { return fechaAsignacion; }
+    public void setFechaAsignacion(LocalDate fechaAsignacion) { this.fechaAsignacion = fechaAsignacion; }
 
-    public LocalDate getFechaAsignacion() {
-        return fechaAsignacion;
-    }
+    public EstadoAsignacion getEstadoAsignacion() { return estadoAsignacion; }
+    public void setEstadoAsignacion(EstadoAsignacion estadoAsignacion) { this.estadoAsignacion = estadoAsignacion; }
 
-    public void setFechaAsignacion(LocalDate fechaAsignacion) {
-        this.fechaAsignacion = fechaAsignacion;
-    }
+    public String getObservaciones() { return observaciones; }
+    public void setObservaciones(String observaciones) { this.observaciones = observaciones; }
 
-    public EstadoAsignacion getEstadoAsignacion() {
-        return estadoAsignacion;
-    }
+    public Perito getPerito() { return perito; }
+    public void setPerito(Perito perito) { this.perito = perito; }
 
-    public void setEstadoAsignacion(EstadoAsignacion estadoAsignacion) {
-        this.estadoAsignacion = estadoAsignacion;
-    }
-
-    public String getObservaciones() {
-        return observaciones;
-    }
-
-    public void setObservaciones(String observaciones) {
-        this.observaciones = observaciones;
-    }
-
-    public Perito getPerito() {
-        return perito;
-    }
-
-    public void setPerito(Perito perito) {
-        this.perito = perito;
-    }
-
-    public Avaluos getAvaluos() {
-        return avaluos;
-    }
-
-    public void setAvaluos(Avaluos avaluos) {
-        this.avaluos = avaluos;
-    }
+    public Avaluos getAvaluos() { return avaluos; }
+    public void setAvaluos(Avaluos avaluos) { this.avaluos = avaluos; }
 }
- 

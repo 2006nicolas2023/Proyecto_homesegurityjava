@@ -47,101 +47,41 @@ public class Avaluos {
     @Column(name = "reposicion", columnDefinition = "TEXT")
     private String reposicion;
 
-    // ------- RELACIONES --------
-
-    // FK a vivienda
-    //@ManyToOne
-    //@JoinColumn(name = "id_vivienda", nullable = false)
-    //private Vivienda vivienda;
-
-    // FK a metodologia
     @ManyToOne
     @JoinColumn(name = "id_metodologia", nullable = false)
     private Metodologia metodologia;
 
     // GETTERS Y SETTERS
+    public Long getId() { return idAvaluos; }
+    public void setId(Long id) { this.idAvaluos = id; }
 
-    public Long getId() { 
-        return idAvaluos; 
-    }
-    public void setId(Long id) { 
-        this.idAvaluos = id; 
-    }
+    public LocalDate getFecha() { return fecha; }
+    public void setFecha(LocalDate fecha) { this.fecha = fecha; }
 
-    public LocalDate getFecha() { 
-        return fecha; 
-    }
-    public void setFecha(LocalDate fecha) { 
-        this.fecha = fecha; 
-    }
+    public String getTipo() { return tipo; }
+    public void setTipo(String tipo) { this.tipo = tipo; }
 
-    public String getTipo() { 
-        return tipo; 
-    }
-    public void setTipo(String tipo) { 
-        this.tipo = tipo; 
-    }
+    public Double getValor() { return valor; }
+    public void setValor(Double valor) { this.valor = valor; }
 
-    public Double getValor() { 
-        return valor; 
-    }
-    public void setValor(Double valor) { 
-        this.valor = valor; 
-    }
+    public String getMetodoUtilizado() { return metodoUtilizado; }
+    public void setMetodoUtilizado(String metodoUtilizado) { this.metodoUtilizado = metodoUtilizado; }
 
-    public String getMetodoUtilizado() { 
-        return metodoUtilizado; 
-    }
-    public void setMetodoUtilizado(String metodoUtilizado) { 
-        this.metodoUtilizado = metodoUtilizado; 
-    }
+    public Integer getAnio() { return anio; }
+    public void setAnio(Integer anio) { this.anio = anio; }
 
-    public Integer getAnio() { 
-        return anio; 
-    }
-    public void setAnio(Integer anio) { 
-        this.anio = anio; 
-    }
+    public String getEstado() { return estado; }
+    public void setEstado(String estado) { this.estado = estado; }
 
-    public String getEstado() { 
-        return estado; 
-    }
-    public void setEstado(String estado) { 
-        this.estado = estado; 
-    }
+    public String getObservaciones() { return observaciones; }
+    public void setObservaciones(String observaciones) { this.observaciones = observaciones; }
 
-    public String getObservaciones() { 
-        return observaciones; 
-    }
-    public void setObservaciones(String observaciones) { 
-        this.observaciones = observaciones; 
-    }
+    public String getComparativo() { return comparativo; }
+    public void setComparativo(String comparativo) { this.comparativo = comparativo; }
 
-    public String getComparativo() { 
-        return comparativo; 
-    }
-    public void setComparativo(String comparativo) { 
-        this.comparativo = comparativo; 
-    }
+    public String getReposicion() { return reposicion; }
+    public void setReposicion(String reposicion) { this.reposicion = reposicion; }
 
-    public String getReposicion() { 
-        return reposicion; 
-    }
-    public void setReposicion(String reposicion) { 
-        this.reposicion = reposicion; 
-    }
-
-    //public Vivienda getVivienda() { 
-    //return vivienda; 
-    //}
-    //public void setVivienda(Vivienda vivienda) { 
-    //this.vivienda = vivienda;
-    //}
-
-    public Metodologia getMetodologia() { 
-        return metodologia; 
-    }
-    public void setMetodologia(Metodologia metodologia) { 
-        this.metodologia = metodologia; 
-    }
+    public Metodologia getMetodologia() { return metodologia; }
+    public void setMetodologia(Metodologia metodologia) { this.metodologia = metodologia; }
 }

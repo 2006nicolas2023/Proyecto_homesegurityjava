@@ -44,59 +44,27 @@ public class Metodologia {
     private String recomendaciones;
 
     // GETTERS Y SETTERS
-    public Long getId() { 
-        return id; 
-    }
-    public void setId(Long id) { 
-        this.id = id; 
-    }
+    public Long getId() { return id; }
+    public void setId(Long id) { this.id = id; }
 
-    public String getNombreMetodologia() { 
-        return nombreMetodologia; 
-    }
-    public void setNombreMetodologia(String nombreMetodologia) { 
-        this.nombreMetodologia = nombreMetodologia; 
-    }
+    public String getNombreMetodologia() { return nombreMetodologia; }
+    public void setNombreMetodologia(String nombreMetodologia) { this.nombreMetodologia = nombreMetodologia; }
 
-    public String getDescripcion() { 
-        return descripcion; 
-    }
-    public void setDescripcion(String descripcion) { 
-        this.descripcion = descripcion; 
-    }
+    public String getDescripcion() { return descripcion; }
+    public void setDescripcion(String descripcion) { this.descripcion = descripcion; }
 
-    public String getObjetivos() { 
-        return objetivos; 
-    }
-    public void setObjetivos(String objetivos) { 
-        this.objetivos = objetivos; 
-    }
+    public String getObjetivos() { return objetivos; }
+    public void setObjetivos(String objetivos) { this.objetivos = objetivos; }
 
-    public String getFasesProceso() { 
-        return fasesProceso; 
-    }
-    public void setFasesProceso(String fasesProceso) { 
-        this.fasesProceso = fasesProceso; 
-    }
+    public String getFasesProceso() { return fasesProceso; }
+    public void setFasesProceso(String fasesProceso) { this.fasesProceso = fasesProceso; }
 
-    public String getHerramientas() { 
-        return herramientas; 
-    }
-    public void setHerramientas(String herramientas) { 
-        this.herramientas = herramientas; 
-    }
+    public String getHerramientas() { return herramientas; }
+    public void setHerramientas(String herramientas) { this.herramientas = herramientas; }
 
-    public String getBeneficios() { 
-        return beneficios; 
-    }
-    public void setBeneficios(String beneficios) { 
-        this.beneficios = beneficios; 
-    }
+    public String getBeneficios() { return beneficios; }
+    public void setBeneficios(String beneficios) { this.beneficios = beneficios; }
 
-    public String getRecomendaciones() { 
-        return recomendaciones; 
-    }
-    public void setRecomendaciones(String recomendaciones) { 
-        this.recomendaciones = recomendaciones; 
-    }
+    public String getRecomendaciones() { return recomendaciones; }
+    public void setRecomendaciones(String recomendaciones) { this.recomendaciones = recomendaciones; }
 }
