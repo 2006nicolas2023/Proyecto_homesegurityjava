@@ -1,5 +1,4 @@
 package com.proyecto.homesegurity.entity;
-
 import jakarta.persistence.*;
 
 @Entity
