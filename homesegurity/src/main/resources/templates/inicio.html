@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>HomeSegurity - Plataforma Inmobiliaria</title>
+    <link rel="stylesheet" th:href="@{/css/agendar.css}" />
+</head>
+
+<body>
+<div class="container">
+    <h1>Bienvenido a HomeSegurity</h1>
+
+    <p>
+        Esta plataforma digital está diseñada para modernizar los procesos de pequeñas 
+        inmobiliarias en Bogotá, permitiendo gestionar asesorías, avalúos, negociaciones 
+        y visitas a propiedades de manera organizada y profesional.
+    </p>
+
+    <h2>¿Qué deseas hacer hoy?</h2>
+
+    <div class="actions" style="margin-top: 25px;">
+        <a th:href="@{/citas/agendar}" class="btn">Agendar una cita</a>
+        <a href="#" class="btn-link">Ver propiedades</a>
+        <a href="#" class="btn-link">Contacto</a>
+    </div>
+</div>
+</body>
+</html>

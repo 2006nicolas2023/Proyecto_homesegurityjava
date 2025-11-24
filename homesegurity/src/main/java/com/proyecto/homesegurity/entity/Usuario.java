@@ -11,14 +11,14 @@ public class Usuario {
     private Integer id;
 
     private String primerNombre;
-    private String segundoNombre;
     private String primerApellido;
-    private String segundoApellido;
+    private String contraseña;
     private Integer edad;
     private String correo;
-    private String contraseña;
     private String telefono;
     private String direccion;
+    private String Num_Documento;
+    private String Estado_Cuenta;
 
     public Usuario() {}
 
@@ -28,14 +28,12 @@ public class Usuario {
     public String getPrimerNombre() { return primerNombre; }
     public void setPrimerNombre(String primerNombre) { this.primerNombre = primerNombre; }
 
-    public String getSegundoNombre() { return segundoNombre; }
-    public void setSegundoNombre(String segundoNombre) { this.segundoNombre = segundoNombre; }
 
     public String getPrimerApellido() { return primerApellido; }
     public void setPrimerApellido(String primerApellido) { this.primerApellido = primerApellido; }
 
-    public String getSegundoApellido() { return segundoApellido; }
-    public void setSegundoApellido(String segundoApellido) { this.segundoApellido = segundoApellido; }
+    public String getNum_Documento() { return Num_Documento; }
+    public void setNum_Documento(String Num_Documento) { this.Num_Documento = Num_Documento; }
 
     public Integer getEdad() { return edad; }
     public void setEdad(Integer edad) { this.edad = edad; }
@@ -51,4 +49,7 @@ public class Usuario {
 
     public String getDireccion() { return direccion; }
     public void setDireccion(String direccion) { this.direccion = direccion; }
+
+     public String getEstado_Cuenta() { return Estado_Cuenta; }
+    public void setEstado_Cuenta(String Estado_Cuenta) { this.Estado_Cuenta = Estado_Cuenta; }
 }
